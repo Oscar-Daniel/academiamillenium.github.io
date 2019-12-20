@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Academia Millenium</title>
+    <link rel="icon" type="image/jpg" href="archivos/millenium-logo.jpg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro|Girassol|Oswald|Gelasio|Rakkas&display=swap" rel="stylesheet">
+    <meta name ="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+    <i class="icon-menu burger-button" id="burger-menu"></i>
+        <nav id="menu">
+          <ol>
+            <li><a class="link" href="#Presentacion">Presentación</a></li>
+            <li><a class="link" href="#Cursos">Cursos por grado</a></li>
+            <li><a class="link" href="#Docentes">Plana docente</a></li>
+            <li><a class="link" href="#Contacto">Contacto</a></li>
+          </ol>
+        </nav>
+
+    <section class="hero" id="Presentacion">
+      <div class="container">
+        <div class="caja-Imagenes">
+          <div class="imagenes">
+            <img class="hero-image"src="archivos/hero1.jpg" alt="Imagen de portada 1" id="hero1"/>
+            <img class="hero-image"src="archivos/hero2.jpg" alt="Imagen de portada 2" id="hero2"/>
+            <img class="hero-image"src="archivos/hero3.jpg" alt="Imagen de portada 3" id="hero3"/>
+          </div>
+        </div>
+        <div class="hero-text">
+          <div class="hero-text-p">
+            <small>Academia Preuniversitaria</small>
+            <h1> MILLENIUM</h1>
+          </div>
+          <h3>Nacimos para servir y formar jóvenes exitosos.<br>
+          Resposavilidad, exigencia y calidad en sus servicios.</h3>
+        </div>
+        <div class="radio-contain">
+          <label class="radio"><input name="hero-images" type="radio" id="radio1" onclick="mostarHero(1)"> <span></span></label>
+          <label class="radio"><input name="hero-images" type="radio" id="radio2" onclick="mostarHero(2)"checked> <span></span></label>
+          <label class="radio"><input name="hero-images" type="radio" id="radio3" onclick="mostarHero(3)"> <span></span></label>
+        </div>
+      </div>
+    </section>
+
+    <section id="Cursos" class="cursos">
+      <div class="container">
+        <h2>Cursos de reforzamiento</h2>
+        <div class="cursos_container">
+          <article class="curso">
+            <figure class="curso_image_Container">
+              <img class="curso_image" src="archivos/P90215-150456.jpg" alt="Maths" width="20%"/>
+            </figure>
+            <div class="curso_details">
+              <h3 class="curso_title">Primer Año</h3>
+              <p class="curso_description">Dictamos los siguientes cursos de nivelación para alumnos de primer año de secundaria: <strong>comunicación</strong> y <strong>matemática.</strong></p>
+              <button class="curso_url" onclick="informacionPrecio(1)">Ver Costo</button>
+            </div>
+          </article>
+
+          <article class="curso">
+            <figure class="curso_image_Container">
+              <img class="curso_image" src="archivos/P90215-150456.jpg" alt="Maths" width="20%"/>
+            </figure>
+            <div class="curso_details">
+              <h3 class="curso_title">Segundo Año</h3>
+              <p class="curso_description">Dictamos los siguientes cursos de nivelación para alumnos de primer año de secundaria: <strong>comunicación</strong> y <strong>matemática.</strong></p>
+              <button class="curso_url" onclick="informacionPrecio(2)">Ver Costo</button>
+            </div>
+          </article>
+
+          <article class="curso">
+            <figure class="curso_image_Container">
+              <img class="curso_image" src="archivos/P90215-150456.jpg" alt="Maths" width="20%"/>
+            </figure>
+            <div class="curso_details">
+              <h3 class="curso_title">Tercer Año</h3>
+              <p class="curso_description">Dictamos los siguientes cursos de nivelación para alumnos de primer año de secundaria: <strong>comunicación</strong> y <strong>matemática.</strong></p>
+              <button class="curso_url" onclick="informacionPrecio(3)">Ver Costo</button>
+            </div>
+          </article>
+
+          <article class="curso">
+            <figure class="curso_image_Container">
+              <img class="curso_image" src="archivos/P90215-150456.jpg" alt="Maths" width="20%"/>
+            </figure>
+            <div class="curso_details">
+              <h3 class="curso_title">Preuniversitario</h3>
+              <p class="curso_description">Dictamos los siguientes cursos de nivelación para alumnos de primer año de secundaria: <strong>comunicación</strong> y <strong>matemática.</strong></p>
+              <button class="curso_url" onclick="informacionPrecio(4)">Ver Costo</button>
+            </div>
+          </article>
+
+          <div class="contenedor_table">
+            <article class="costo_table invisible_t">
+              <i class="icon-cross cerrar" id="cerrarInfoPrice"></i>
+              <h4 class="costo_titulo"><strong>COSTO: <span id="costo_titulo">Primer Año</span></strong></h4>
+              <p class="info_cost"><strong>Inscripción: </strong>10 soles</p>
+              <p class="info_cost"><strong>Mensualidad: </strong><span id="mensualidad">X soles</span></p>
+            </article>
+          </div>
+          <div id="pantalla-negra" class="pantalla-negra invisible_t"> </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="Docentes" class="docentes">
+      <div class="container">
+        <h2>Plana docente</h2>
+        <div class="profesores_container">
+          <article class="profesor">
+            <figure class="profe_image_Container">
+              <img class="profe_image" src="archivos/oscar1-Recuperadoc.jpg" alt="Oscar en logo PUCP" width="250px" height="250px">
+            </figure>
+            <div class="profesor_details">
+              <h3 class="profe_title">Pr. Gustavo Navarro Ramirez (Director)</h3>
+              <p class="profe_curso"><strong>Matemáticas</strong></p>
+              <p class="profesor_mensaje">Este es un ejemplo de mensaje. Para que el diseño no quede tan vacío es necesario completar y brindar cierta información al público. Este campo será llenado con la información que brinden los mismos profesores.</p>
+              <p class="profe_url"><small><strong>Facebook:</strong> <a href="">http:facebook/persona/</a></small></p>
+            </div>
+          </article>
+
+          <article class="profesor">
+            <figure class="profe_image_Container">
+              <img class="profe_image" src="archivos/oscar1-Recuperadoc.jpg" alt="Oscar en logo PUCP" width="250px" height="250px">
+            </figure>
+            <div class="profesor_details">
+              <h3 class="profe_title">Pr. Gustavo Navarro Ramirez (Director)</h3>
+              <p class="profe_curso"><strong>Matemáticas</strong></p>
+              <p class="profesor_mensaje">Este es un ejemplo de mensaje. Para que el diseño no quede tan vacío es necesario completar y brindar cierta información al público. Este campo será llenado con la información que brinden los mismos profesores.</p>
+              <p class="profe_url"><small><strong>Facebook:</strong> <a href="">http:facebook/persona/</a></small></p>
+            </div>
+          </article>
+
+          <article class="profesor">
+            <figure class="profe_image_Container">
+              <img class="profe_image" src="archivos/oscar1-Recuperadoc.jpg" alt="Oscar en logo PUCP" width="250px" height="250px">
+            </figure>
+            <div class="profesor_details">
+              <h3 class="profe_title">Pr. Gustavo Navarro Ramirez (Director)</h3>
+              <p class="profe_curso"><strong>Matemáticas</strong></p>
+              <p class="profesor_mensaje">Este es un ejemplo de mensaje. Para que el diseño no quede tan vacío es necesario completar y brindar cierta información al público. Este campo será llenado con la información que brinden los mismos profesores.</p>
+              <p class="profe_url"><small><strong>Facebook:</strong> <a href="">http:facebook/persona/</a></small></p>
+            </div>
+          </article>
+
+          <article class="profesor">
+            <figure class="profe_image_Container">
+              <img class="profe_image" src="archivos/oscar1-Recuperadoc.jpg" alt="Oscar en logo PUCP" width="250px" height="250px">
+            </figure>
+            <div class="profesor_details">
+              <h3 class="profe_title">Pr. Gustavo Navarro Ramirez (Director)</h3>
+              <p class="profe_curso"><strong>Matemáticas</strong></p>
+              <p class="profesor_mensaje">Este es un ejemplo de mensaje. Para que el diseño no quede tan vacío es necesario completar y brindar cierta información al público. Este campo será llenado con la información que brinden los mismos profesores.</p>
+              <p class="profe_url"><small><strong>Facebook:</strong> <a href="">http:facebook/persona/</a></small></p>
+            </div>
+          </article>
+        </div>
+
+
+
+    </section>
+
+    <section id="Contacto" class="contact">
+      <div class="container">
+        <h2>Contacto</h2>
+        <div class="contact_contenido">
+            <div class="telefono">
+              <img class="director_image" src="archivos/oscar1-Recuperadoc.jpg" alt="Oscar en logo PUCP" width="100px" height="100px">
+              <p class="direccion"><strong>Celular: </strong>929 136 183 (Movistar)</p>
+            </div>
+            <div class="ubicacion">
+              <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d990.2045687017502!2d-76.33235690625985!3d-6.9123197187316325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91ba876d2042ad9d%3A0x8a486a6f7e4f2355!2sC.p%20Picota!5e0!3m2!1ses-419!2spe!4v1576684292954!5m2!1ses-419!2spe" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+              <p class="direccion"><strong>Dirección: </strong>Jr. Los Jardines Mz.6 Lote 14.<br>Urb. Las Almendras - Picota</p>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>Designed by <a href="https://www.facebook.com/profile.php?id=100008968231789">Oscar Daniel</a> </p>
+    </footer>     
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+      <script src="interaccion.js"></script>
+  </body>
+</html>
