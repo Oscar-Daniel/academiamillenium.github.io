@@ -146,7 +146,7 @@ h2 {
     z-index: 2;
   }
   .hero-text-p {
-    margin-top: 45px;
+    margin-top: 5px;
   }
     .hero-text small {
       font-size: 1.1em;
@@ -160,7 +160,7 @@ h2 {
       letter-spacing: 2px;
       color: #fff;
       margin: 0;
-      margin-bottom: 125px;
+      margin-bottom: 167px;
       text-shadow: 5px 4px 0 rgba(0, 0, 0, 0.59);
       font-family: 'Girassol', cursive;
     }
@@ -418,7 +418,6 @@ h2 {
       }
 
 
-
 /* FOOTER */
 .footer {
   color: #fff;
@@ -435,6 +434,7 @@ h2 {
   .footer a {
     color: #026fff;
     text-decoration: none;
+    cursor: pointer;
   }
 
 
@@ -451,7 +451,7 @@ h2 {
   }
       h1 {
         font-size: 50px;
-        margin-bottom: 82px;
+        margin-bottom: 63px;
       }
       h2 {
         margin-top: 20px;
@@ -507,6 +507,12 @@ h2 {
     }
     .radio-contain {
       top: 265px;
+    }
+    h1 {
+      margin-bottom: 65px;
+    }
+    .hero-text-p {
+      margin-top: 17px;
     }
       h2 {
         margin: 0;
@@ -574,7 +580,8 @@ h2 {
   height: 282px;
 }
   .radio-contain {
-    top: 253px;
+    top: 132px;
+    z-index: 3;
   }
     .radio span {
       width: 15px;
@@ -584,9 +591,12 @@ h2 {
       width: 9px;
       height: 9px;
     }
-
+    .hero-text-p {
+      margin-top: 17px;
+  }
   h1 {
     font-size: 48px;
+    margin-bottom: 143px;
   }
   .hero-text h3 {
     font-size: 18.5px;
@@ -684,13 +694,13 @@ h2 {
         left: -106%
       }
       .derecha {
-        left: -114%
+        left: 114%
       }
       .hero-image {
         width: 92%
       }
     .radio-contain {
-      top: 212px;
+      top: 217px;
     }
       .radio span {
         width: 14px;
@@ -700,9 +710,12 @@ h2 {
         width: 8.5px;
         height: 8.5px;
       }
+      .hero-text-p {
+        margin-top: 5px;
+    }
       h1 {
         font-size: 40px;
-        margin-bottom: 72px;
+        margin-bottom: 114px;
         line-height: 40px;
       }
       h2 {
