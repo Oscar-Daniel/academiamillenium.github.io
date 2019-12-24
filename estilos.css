@@ -19,6 +19,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Fjalla One', sans-serif;
   font-weight: normal;
+  font-size: 1.3em;
 }
 
 h2 {
@@ -31,6 +32,9 @@ h2 {
   margin-left: 1.2em;
   margin-top: 1.5em;
   padding-top: 1.3em;
+}
+h4 {
+  margin-top: 0px;
 }
 
 .burger-button {
@@ -169,7 +173,7 @@ h2 {
     margin: 0;
     line-height: 1.5em;
     width: 720px;
-    background: #ffffff4a;
+    background: #0000004d;
   }
   .radio-contain {
     position: absolute;
@@ -293,14 +297,13 @@ h2 {
       color: #fff;
       padding: 6px;
       border-radius: 10px;
-      top: -15px;
-      left: 145px;
+      top: -14px;
+      left: 147px;
       position: relative;
       font-size: 16px;
     }
     .cerrar:hover {
-      background: #ffffff8a;
-      color: #000;
+      background: rgba(255, 0, 0, 0.849);
     }
     .costo_table {
 
@@ -402,8 +405,8 @@ h2 {
       text-align: center;
     }
       .director_image {
-        width: 120px;
-        height: 120px;
+        width: 130px;
+        height: 130px;
         overflow: hidden;
         object-fit: cover;
         border-radius: 4px;
@@ -413,8 +416,8 @@ h2 {
       text-align: center;
     }
       .map {
-        width: 290px;
-        height: 115px;
+        width: 298px;
+        height: 125px;
       }
 
 
@@ -450,7 +453,7 @@ h2 {
     padding: 0;
   }
       h1 {
-        font-size: 50px;
+        font-size: 59px;
         margin-bottom: 63px;
       }
       h2 {
@@ -463,11 +466,8 @@ h2 {
   .cursos_container {
     padding: .5em;
   }
-    .curso_description {
-      font-size: .96em;
-    }
     .curso_url {
-      font-size: .91em;
+      font-size: .95em;
     }
   .profesores_container {
     padding: 1.2em;
@@ -477,7 +477,7 @@ h2 {
       height: 225px;
     }
     .profe_title {
-      font-size: 22px;
+      font-size: 23px;
     }
   .contact {
     padding: 0;
@@ -540,6 +540,7 @@ h2 {
           margin-top: 0;
         }
         .cerrar {
+          top: -15px;
           left: 132px;
         }
     .profe_image_Container {
@@ -655,6 +656,9 @@ h2 {
       width: 80%;
       margin: auto;
     }
+    #telef {
+      margin-top: 52px;
+    }
       .map {
         width: 340px;
         height: 150px;
@@ -666,10 +670,10 @@ h2 {
 }
 @media screen and (max-width: 479px) {
   .burger-button {
-    font-size: 16px;
-    width: 35px;
-    height: 35px;
-    line-height: 35px;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
   }
   #menu {
     left: -100vw;
@@ -714,12 +718,12 @@ h2 {
         margin-top: 5px;
     }
       h1 {
-        font-size: 40px;
+        font-size: 42px;
         margin-bottom: 114px;
         line-height: 40px;
       }
       h2 {
-        font-size: 1em;
+        font-size: 1.2em;
       }
       .hero-text h3 {
         font-size: 14px;
@@ -738,16 +742,16 @@ h2 {
     }
       h3 {
         margin: 8px 0;
-        font-size: 16px;
+        font-size: 18px;
       }
       .curso_description {
         text-align: center;
-        font-size: 12px;
+        font-size: 14px;
       }
       .curso_url {
         padding: 5px 30px;
         border-radius: 4px;
-        font-size: .68em;
+        font-size: .82em;
     }
     .costo_table {
       width: 196px;
@@ -778,16 +782,16 @@ h2 {
       height: 188px;
     }
     .profe_title {
-      font-size: 1.2em;
+      font-size: 1.3em;
     }
     .profesor_mensaje {
-      font-size: 14px;
+      font-size: 14.5px;
     }
     .profesor strong {
       font-size: 1em;
     }
     .profe_url a {
-      font-size: 12px;
+      font-size: 13px;
     }
   .contact_contenido {
     padding: 1em;
@@ -796,8 +800,15 @@ h2 {
       display: block;
       justify-content: center;
     }
+    #telef {
+      margin-top: 12px;
+      margin-bottom: 20px;
+  }
       .director_image {
         margin-bottom: 0;
+        width: 130px;
+        height: 130px;
+        margin-right: 0;
       }
     .ubicacion {
       max-width: 320px;
@@ -807,9 +818,6 @@ h2 {
         width: 100%;
         height: 130px;
       }
-    .direccion {
-      font-size: 13px;
-    }
   .footer {
     font-size: 13px;
     padding: 3px 9px;
@@ -839,10 +847,10 @@ h2 {
     height: 8px;
   }
 .costo_table {
-  width: 178px;
-  height: 152px;
-  font-size: 14px;
-  padding: 14px;
+  width: 208px;
+    height: 155px;
+    font-size: 15px;
+    padding: 17px;
   border: 4px solid #000;
   border-radius: 12px;
 }
@@ -850,7 +858,7 @@ h2 {
   margin-bottom: 32px;
 }
   .cerrar {
-    left: 97px;
+    left: 112px;
     top: -16px;
     padding: 4.8px;
     font-size: 12px;
