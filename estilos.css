@@ -384,7 +384,95 @@ h4 {
             font-family: 'Times New Roman', Times, serif;
             font-size: 1.1em;
             }
-
+      .profesor .curso_url {
+        margin: 0 auto;
+        display: block;
+        color: #1350a5;
+        padding: 5px 24px;
+      }
+      .reto_container {
+        margin-top: 1.2em;
+        background: #f9f9f9;
+        padding: .75em;
+        display: none;
+        width: 100%;
+        border-radius: 6px;
+      }
+      .most-reto {
+        display: block;
+      }
+        .ejercicio_reto {
+          background: #f9f9f9;
+          position: relative;
+          padding-bottom: 1em;
+        }
+          .ejercicio_titulo {
+            font-size: 20px;
+            margin-bottom: 0;
+          }
+          .ejercicio_tema {
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: 500;
+            margin: .35em 0;
+            font-size: 15.5px;
+            letter-spacing: -0.2px;
+          }
+          .problema_description {
+            font-family: -webkit-body;
+          }
+          .alternativas {
+            position: relative;
+            top: -5px;
+            box-sizing: border-box;
+          }
+            .alternativas .radio {
+              padding-left: 30px;
+            }
+            .alternativas .radio span {
+              border: 2.5px solid #7db3ff;
+            }
+            .alternativas .radio span::after {
+              background: #7db3ff;
+            }
+          .respuestas {
+            display: none;
+            background: #5dd910;
+            padding: .4em;
+            border-radius: 6px;
+            margin: 10px 0;
+            color: #fff;
+            font-size: 18px;
+            font-weight: 600;
+            font-family: 'Times New Roman', Times, serif;
+          }
+          .respuestas.incorrecta {
+            background: #ff463b;
+          }
+          .validarPuntaje {
+              text-align: center;
+              background: #77ccdd;
+              padding: .6em .8em .8em;
+              border: none;
+              color: white;
+              margin: 5px;
+              margin-left: 90%;
+              border-radius: 5px;
+              cursor: pointer;
+              box-shadow: 0 -.2em rgba(0,0,0, .2);
+              outline: 0;
+              transition: .3s;
+              display: block;
+          }
+          .puntObtenido {
+            display: none;
+            background: #5dd;
+            font-size: 17px;
+            padding: .5em;
+            border-radius: 6px;
+            color: #fff;
+            font-weight: 600;
+            font-family: 'Times New Roman', Times, serif;
+          }
 
 
 /* CONTACTO */

@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="estilos.css">
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro|Girassol|Oswald|Gelasio|Rakkas&display=swap" rel="stylesheet">
     <meta name ="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Academia Preuniversitaria Millenium - Picota, director Pr. Gustavo Navarro Ramirez. Nacimos para servir y formar jóvenes exitosos. Resposavilidad, exigencia y calidad en sus servicios."/>
+    <meta name="description" content="Academia Preuniversitaria Millenium - Picota, director Pr. Gustavo Navarro Ramirez. Nacimos para servir y formar jóvenes exitosos. Resposabilidad, exigencia y calidad en sus servicios."/>
     <meta name="keywords" content="academia, academia preuniversitaria millenium, picota, academia millenium">
   
     <!-- Facebook Pixel Code -->
@@ -55,7 +55,7 @@
             <h1> MILLENIUM</h1>
           </div>
           <h3>Nacimos para servir y formar jóvenes exitosos.<br>
-          Resposavilidad, exigencia y calidad en sus servicios.</h3>
+          Resposabilidad, exigencia y calidad en sus servicios.</h3>
         </div>
         <div class="radio-contain">
           <label class="radio"><input name="hero-images" type="radio" id="radio1" onclick="mostarHero(1)"> <span></span></label>
@@ -108,7 +108,8 @@
             </figure>
             <div class="curso_details">
               <h3 class="curso_title">Preuniversitario</h3>
-              <p class="curso_description">Cursos de preparación universitaria: <strong>Raz. Matemático, Álgebra, Aritmética, Geometría, Trigonometría, Física, Química, Comunicación y Raz. Verbal.</strong></p><button class="curso_url" onclick="informacionPrecio(4)">Ver Costo</button>
+              <p class="curso_description">Cursos de preparación universitaria: <strong>Raz. Matemático, Álgebra, Aritmética, Geometría, Trigonometría, Física, Química, Comunicación y Raz. Verbal.</strong></p>
+              <button class="curso_url" onclick="informacionPrecio(4)">Ver Costo</button>
             </div>
           </article>
 
@@ -134,11 +135,55 @@
               <img class="profe_image" src="archivos/gustavo.jpg" alt="Gustavo" width="250px" height="250px">
             </figure>
             <div class="profesor_details">
-              <h3 class="profe_title">Pr. Gustavo Navarro Ramirez (Director)</h3>
+              <h3 class="profe_title">Prof. Gustavo Navarro Ramirez (Director)</h3>
               <p class="profe_curso"><strong>Matemáticas</strong></p>
               <p class="profesor_mensaje">Magíster en gestión y docencia. Cuenta con 29 años de experiencia en la docencia, es profesor de matemática y física, director de la "Academia Preuniversitaria Millenium" y director de la I.E. N° 0090 de Mariscal Castilla - Picota, San Martín.</p>
               <p class="profe_url"><small><strong>Facebook:</strong> <a href="https://www.facebook.com/gustavo.navarroramirez.56">Gustavo Navarro Ramirez</a></small></p>
+              <button class="curso_url" onclick="toggleExercises(1)">Ver ejercicios</button>
             </div>
+            <!-- <div class="reto_container" id="reto1">
+                <div class="ejercicio_reto">
+                  <h4 class="ejercicio_titulo">Ejercicio 1</h4>
+                  <p class="ejercicio_tema">Regla de tres simple</p>
+                  <p class="profesor_mensaje">Una embarcación lleva recorriendo el 25% del camino a su destino, para lo cual ha necesitado 2050 de los 7175 litros de combustible que tiene disponible. El capitán se da cuenta que mientras más peso tiene el barco, más combustible gasta. Entonces, para que la tripulación logre llegar a salvo a su destino, ¿cuánto es el peso del que deben deshacerse si inicialmente el barco partió con 12 toneladas?</p>
+                  <div class="alternativas">
+                    <label class="radio"><input name="pregunta1_gus" type="radio"> <span></span>1 tonelada</label>
+                    <label class="radio"><input name="pregunta1_gus" type="radio" id="p1G"> <span></span>2 toneladas</label>
+                    <label class="radio"><input name="pregunta1_gus" type="radio"> <span></span>2.5 toneladas</label>
+                    <label class="radio"><input name="pregunta1_gus" type="radio"> <span></span>3 toneladas</label>
+                  </div>
+                  <div class="respuestas incorrecta" id="respuesta1G">La respuesta correcta es:<strong> 2 toneladas</strong></div>
+                  <div class="respuestas" id="g1">Respuesta correcta</div>
+                </div>
+                <div class="ejercicio_reto">
+                  <h4 class="ejercicio_titulo">Ejercicio 2</h4>
+                  <p class="ejercicio_tema">Regla de tres simple</p>
+                  <p class="profesor_mensaje">Una embarcación lleva recorriendo el 25% del camino a su destino, para lo cual ha necesitado 2050 de los 7175 litros de combustible que tiene disponible. El capitán se da cuenta que mientras más peso tiene el barco, más combustible gasta. Entonces, para que la tripulación logre llegar a salvo a su destino, ¿cuánto es el peso del que deben deshacerse si inicialmente el barco partió con 12 toneladas?</p>
+                  <div class="alternativas">
+                    <label class="radio"><input name="pregunta2_gus" type="radio"> <span></span>1 tonelada</label>
+                    <label class="radio"><input name="pregunta2_gus" type="radio"> <span></span>2 toneladas</label>
+                    <label class="radio"><input name="pregunta2_gus" type="radio" id="p2G"> <span></span>2.5 toneladas</label>
+                    <label class="radio"><input name="pregunta2_gus" type="radio"> <span></span>3 toneladas</label>
+                  </div>
+                  <div class="respuestas incorrecta" id="respuesta2G">La respuesta correcta es:<strong> 2 toneladas</strong></div>
+                  <div class="respuestas" id="g2">Respuesta correcta</div>
+                </div>
+                <div class="ejercicio_reto">
+                  <h4 class="ejercicio_titulo">Ejercicio 3</h4>
+                  <p class="ejercicio_tema">Regla de tres simple</p>
+                  <p class="profesor_mensaje">Una embarcación lleva recorriendo el 25% del camino a su destino, para lo cual ha necesitado 2050 de los 7175 litros de combustible que tiene disponible. El capitán se da cuenta que mientras más peso tiene el barco, más combustible gasta. Entonces, para que la tripulación logre llegar a salvo a su destino, ¿cuánto es el peso del que deben deshacerse si inicialmente el barco partió con 12 toneladas?</p>
+                  <div class="alternativas">
+                    <label class="radio"><input name="pregunta3_gus" type="radio" id="p3G"> <span></span>1 tonelada</label>
+                    <label class="radio"><input name="pregunta3_gus" type="radio"> <span></span>2 toneladas</label>
+                    <label class="radio"><input name="pregunta3_gus" type="radio"> <span></span>2.5 toneladas</label>
+                    <label class="radio"><input name="pregunta3_gus" type="radio"> <span></span>3 toneladas</label>
+                  </div>
+                  <div class="respuestas incorrecta" id="respuesta3G">La respuesta correcta es:<strong> 2 toneladas</strong></div>
+                  <div class="respuestas" id="g3">Respuesta correcta</div>
+                </div>
+                <button class="validarPuntaje" id="btnGustavo">Corregir</button>
+                <div class="puntObtenido" id="puntajeGustavo">Puntaje obtenido: 3 puntos</div>
+            </div> -->
           </article>
 
           <article class="profesor">
@@ -150,7 +195,51 @@
               <p class="profe_curso"><strong>Matemáticas</strong></p>
               <p class="profesor_mensaje">Estudiante de cuarto ciclo de la carrera de ingeniería informática en la Pontificia Universidad Católica del Perú. En 2017 ocupó el primer puesto, en el cómputo general, en el III Examen de admisión a Universidad Nacional de San Martín.</p>
               <p class="profe_url"><small><strong>Facebook:</strong> <a href="https://www.facebook.com/oscardaniel.navarroc/">Oscar Daniel Navarro Cieza</a></small></p>
+              <button class="curso_url" onclick="toggleExercises(2)">Ver ejercicios</button>
             </div>
+            <!-- <div class="reto_container" id="reto2">
+              <div class="ejercicio_reto">
+                <h4 class="ejercicio_titulo">Ejercicio 1</h4>
+                <p class="ejercicio_tema">Regla de tres simple</p>
+                <p class="profesor_mensaje">Una embarcación lleva recorriendo el 25% del camino a su destino, para lo cual ha necesitado 2050 de los 7175 litros de combustible que tiene disponible. El capitán se da cuenta que mientras más peso tiene el barco, más combustible gasta. Entonces, para que la tripulación logre llegar a salvo a su destino, ¿cuánto es el peso del que deben deshacerse si inicialmente el barco partió con 12 toneladas?</p>
+                <div class="alternativas">
+                  <label class="radio"><input name="pregunta1_os" type="radio"> <span></span>1 tonelada</label>
+                  <label class="radio"><input name="pregunta1_os" type="radio" id="p1O"> <span></span>2 toneladas</label>
+                  <label class="radio"><input name="pregunta1_os" type="radio"> <span></span>2.5 toneladas</label>
+                  <label class="radio"><input name="pregunta1_os" type="radio"> <span></span>3 toneladas</label>
+                </div>
+                <div class="respuestas incorrecta" id="respuesta1O">La respuesta correcta es:<strong> 2 toneladas</strong></div>
+                <div class="respuestas" id="o1">Respuesta correcta</div>
+              </div>
+              <div class="ejercicio_reto">
+                <h4 class="ejercicio_titulo">Ejercicio 2</h4>
+                <p class="ejercicio_tema">Regla de tres simple</p>
+                <p class="profesor_mensaje">Una embarcación lleva recorriendo el 25% del camino a su destino, para lo cual ha necesitado 2050 de los 7175 litros de combustible que tiene disponible. El capitán se da cuenta que mientras más peso tiene el barco, más combustible gasta. Entonces, para que la tripulación logre llegar a salvo a su destino, ¿cuánto es el peso del que deben deshacerse si inicialmente el barco partió con 12 toneladas?</p>
+                <div class="alternativas">
+                  <label class="radio"><input name="pregunta2_os" type="radio" id="p2O"> <span></span>1 tonelada</label>
+                  <label class="radio"><input name="pregunta2_os" type="radio"> <span></span>2 toneladas</label>
+                  <label class="radio"><input name="pregunta2_os" type="radio"> <span></span>2.5 toneladas</label>
+                  <label class="radio"><input name="pregunta2_os" type="radio"> <span></span>3 toneladas</label>
+                </div>
+                <div class="respuestas incorrecta" id="respuesta2O">La respuesta correcta es:<strong> 2 toneladas</strong></div>
+                <div class="respuestas" id="o2">Respuesta correcta</div>
+              </div>
+              <div class="ejercicio_reto">
+                <h4 class="ejercicio_titulo">Ejercicio 3</h4>
+                <p class="ejercicio_tema">Regla de tres simple</p>
+                <p class="profesor_mensaje">Una embarcación lleva recorriendo el 25% del camino a su destino, para lo cual ha necesitado 2050 de los 7175 litros de combustible que tiene disponible. El capitán se da cuenta que mientras más peso tiene el barco, más combustible gasta. Entonces, para que la tripulación logre llegar a salvo a su destino, ¿cuánto es el peso del que deben deshacerse si inicialmente el barco partió con 12 toneladas?</p>
+                <div class="alternativas">
+                  <label class="radio"><input name="pregunta3_os" type="radio"> <span></span>1 tonelada</label>
+                  <label class="radio"><input name="pregunta3_os" type="radio"> <span></span>2 toneladas</label>
+                  <label class="radio"><input name="pregunta3_os" type="radio"> <span></span>2.5 toneladas</label>
+                  <label class="radio"><input name="pregunta3_os" type="radio" id="p3O"> <span></span>3 toneladas</label>
+                </div>
+                <div class="respuestas incorrecta" id="respuesta3O">La respuesta correcta es:<strong> 2 toneladas</strong></div>
+                <div class="respuestas" id="o3">Respuesta correcta</div>
+              </div>
+              <button class="validarPuntaje" id="btnOscar">Corregir</button>
+              <div class="puntObtenido" id="puntajeOscar">Puntaje obtenido: 3 puntos</div>
+          </div> -->
           </article>
 
           <article class="profesor">
@@ -158,11 +247,55 @@
               <img class="profe_image" src="archivos/wilder.jpg" alt="Wilder" width="250px" height="250px">
             </figure>
             <div class="profesor_details">
-              <h3 class="profe_title">Pr. Wilder Pinedo Gomez</h3>
+              <h3 class="profe_title">Prof. Wilder Pinedo Gomez</h3>
               <p class="profe_curso"><strong>Ciencia y tecnología</strong></p>
               <p class="profesor_mensaje">Profesor de Física y Química en la I.E. "Alberto Leveaú García" - Picota. Cuenta con 20 años de experiencia en la docencia.</p>
               <p class="profe_url"><small><strong>Facebook:</strong> <a href="https://www.facebook.com/wpinedogomez">Wilder Pinedo Gomez</a></small></p>
+              <button class="curso_url" onclick="toggleExercises(3)">Ver ejercicios</button>
             </div>
+            <!-- <div class="reto_container" id="reto3">
+              <div class="ejercicio_reto">
+                <h4 class="ejercicio_titulo">Ejercicio 1</h4>
+                <p class="ejercicio_tema">Regla de tres simple</p>
+                <p class="profesor_mensaje">Una embarcación lleva recorriendo el 25% del camino a su destino, para lo cual ha necesitado 2050 de los 7175 litros de combustible que tiene disponible. El capitán se da cuenta que mientras más peso tiene el barco, más combustible gasta. Entonces, para que la tripulación logre llegar a salvo a su destino, ¿cuánto es el peso del que deben deshacerse si inicialmente el barco partió con 12 toneladas?</p>
+                <div class="alternativas">
+                  <label class="radio"><input name="pregunta1_wil" type="radio"> <span></span>1 tonelada</label>
+                  <label class="radio"><input name="pregunta1_wil" type="radio"> <span></span>2 toneladas</label>
+                  <label class="radio"><input name="pregunta1_wil" type="radio"> <span></span>2.5 toneladas</label>
+                  <label class="radio"><input name="pregunta1_wil" type="radio" id="p1W"> <span></span>3 toneladas</label>
+                </div>
+                <div class="respuestas incorrecta" id="respuesta1W">La respuesta correcta es:<strong> 2 toneladas</strong></div>
+                <div class="respuestas" id="w1">Respuesta correcta</div>
+              </div>
+              <div class="ejercicio_reto">
+                <h4 class="ejercicio_titulo">Ejercicio 2</h4>
+                <p class="ejercicio_tema">Regla de tres simple</p>
+                <p class="profesor_mensaje">Una embarcación lleva recorriendo el 25% del camino a su destino, para lo cual ha necesitado 2050 de los 7175 litros de combustible que tiene disponible. El capitán se da cuenta que mientras más peso tiene el barco, más combustible gasta. Entonces, para que la tripulación logre llegar a salvo a su destino, ¿cuánto es el peso del que deben deshacerse si inicialmente el barco partió con 12 toneladas?</p>
+                <div class="alternativas">
+                  <label class="radio"><input name="pregunta2_wil" type="radio"> <span></span>1 tonelada</label>
+                  <label class="radio"><input name="pregunta2_wil" type="radio"> <span></span>2 toneladas</label>
+                  <label class="radio"><input name="pregunta2_wil" type="radio"> <span></span>2.5 toneladas</label>
+                  <label class="radio"><input name="pregunta2_wil" type="radio" id="p2W"> <span></span>3 toneladas</label>
+                </div>
+                <div class="respuestas incorrecta" id="respuesta2W">La respuesta correcta es:<strong> 2 toneladas</strong></div>
+                <div class="respuestas" id="w2">Respuesta correcta</div>
+              </div>
+              <div class="ejercicio_reto">
+                <h4 class="ejercicio_titulo">Ejercicio 3</h4>
+                <p class="ejercicio_tema">Regla de tres simple</p>
+                <p class="profesor_mensaje">Una embarcación lleva recorriendo el 25% del camino a su destino, para lo cual ha necesitado 2050 de los 7175 litros de combustible que tiene disponible. El capitán se da cuenta que mientras más peso tiene el barco, más combustible gasta. Entonces, para que la tripulación logre llegar a salvo a su destino, ¿cuánto es el peso del que deben deshacerse si inicialmente el barco partió con 12 toneladas?</p>
+                <div class="alternativas">
+                  <label class="radio"><input name="pregunta3_wil" type="radio"> <span></span>1 tonelada</label>
+                  <label class="radio"><input name="pregunta3_wil" type="radio" id="p3W"> <span></span>2 toneladas</label>
+                  <label class="radio"><input name="pregunta3_wil" type="radio"> <span></span>2.5 toneladas</label>
+                  <label class="radio"><input name="pregunta3_wil" type="radio"> <span></span>3 toneladas</label>
+                </div>
+                <div class="respuestas incorrecta" id="respuesta3W">La respuesta correcta es:<strong> 2 toneladas</strong></div>
+                <div class="respuestas" id="w3">Respuesta correcta</div>
+              </div>
+              <button class="validarPuntaje" id="btnWilder">Corregir</button>
+              <div class="puntObtenido" id="puntajeWilder">Puntaje obtenido: 3 puntos</div>
+          </div> -->
           </article>
 
           <article class="profesor">
@@ -170,11 +303,55 @@
               <img class="profe_image" src="archivos/billy.jpg" alt="Billy" width="250px" height="250px">
             </figure>
             <div class="profesor_details">
-              <h3 class="profe_title">Pr. Billy Wilder Quesquén Liza</h3>
+              <h3 class="profe_title">Prof. Billy Wilder Quesquén Liza</h3>
               <p class="profe_curso"><strong>Comunicación</strong></p>
               <p class="profesor_mensaje">Trabajó en el Instituto de Educación Superior Pedagógico Público de Picota. Actualmente labora como profesor de Comunicación en la I.E. "Alberto Leveaú García" - Picota.</p>
               <p class="profe_url"><small><strong>Facebook:</strong> <a href="https://www.facebook.com/billy.liza/timeline?lst=100008968231789%3A1251863702%3A1577126390">Billy Quesquén Liza</a></small></p>
+              <button class="curso_url" onclick="toggleExercises(4)">Ver ejercicios</button>
             </div>
+            <!-- <div class="reto_container" id="reto4">
+              <div class="ejercicio_reto">
+                <h4 class="ejercicio_titulo">Ejercicio 1</h4>
+                <p class="ejercicio_tema">Regla de tres simple</p>
+                <p class="profesor_mensaje">Una embarcación lleva recorriendo el 25% del camino a su destino, para lo cual ha necesitado 2050 de los 7175 litros de combustible que tiene disponible. El capitán se da cuenta que mientras más peso tiene el barco, más combustible gasta. Entonces, para que la tripulación logre llegar a salvo a su destino, ¿cuánto es el peso del que deben deshacerse si inicialmente el barco partió con 12 toneladas?</p>
+                <div class="alternativas">
+                  <label class="radio"><input name="pregunta1_bi" type="radio"> <span></span>1 tonelada</label>
+                  <label class="radio"><input name="pregunta1_bi" type="radio"> <span></span>2 toneladas</label>
+                  <label class="radio"><input name="pregunta1_bi" type="radio" id="p1B"> <span></span>2.5 toneladas</label>
+                  <label class="radio"><input name="pregunta1_bi" type="radio"> <span></span>3 toneladas</label>
+                </div>
+                <div class="respuestas incorrecta" id="respuesta1B">La respuesta correcta es:<strong> 2 toneladas</strong></div>
+                <div class="respuestas" id="b1">Respuesta correcta</div>
+              </div>
+              <div class="ejercicio_reto">
+                <h4 class="ejercicio_titulo">Ejercicio 2</h4>
+                <p class="ejercicio_tema">Regla de tres simple</p>
+                <p class="profesor_mensaje">Una embarcación lleva recorriendo el 25% del camino a su destino, para lo cual ha necesitado 2050 de los 7175 litros de combustible que tiene disponible. El capitán se da cuenta que mientras más peso tiene el barco, más combustible gasta. Entonces, para que la tripulación logre llegar a salvo a su destino, ¿cuánto es el peso del que deben deshacerse si inicialmente el barco partió con 12 toneladas?</p>
+                <div class="alternativas">
+                  <label class="radio"><input name="pregunta2_bi" type="radio" id="p2B"> <span></span>1 tonelada</label>
+                  <label class="radio"><input name="pregunta2_bi" type="radio"> <span></span>2 toneladas</label>
+                  <label class="radio"><input name="pregunta2_bi" type="radio"> <span></span>2.5 toneladas</label>
+                  <label class="radio"><input name="pregunta2_bi" type="radio"> <span></span>3 toneladas</label>
+                </div>
+                <div class="respuestas incorrecta" id="respuesta2B">La respuesta correcta es:<strong> 2 toneladas</strong></div>
+                <div class="respuestas" id="b2">Respuesta correcta</div>
+              </div>
+              <div class="ejercicio_reto">
+                <h4 class="ejercicio_titulo">Ejercicio 3</h4>
+                <p class="ejercicio_tema">Regla de tres simple</p>
+                <p class="profesor_mensaje">Una embarcación lleva recorriendo el 25% del camino a su destino, para lo cual ha necesitado 2050 de los 7175 litros de combustible que tiene disponible. El capitán se da cuenta que mientras más peso tiene el barco, más combustible gasta. Entonces, para que la tripulación logre llegar a salvo a su destino, ¿cuánto es el peso del que deben deshacerse si inicialmente el barco partió con 12 toneladas?</p>
+                <div class="alternativas">
+                  <label class="radio"><input name="pregunta3_bi" type="radio"> <span></span>1 tonelada</label>
+                  <label class="radio"><input name="pregunta3_bi" type="radio" id="p3B"> <span></span>2 toneladas</label>
+                  <label class="radio"><input name="pregunta3_bi" type="radio"> <span></span>2.5 toneladas</label>
+                  <label class="radio"><input name="pregunta3_bi" type="radio"> <span></span>3 toneladas</label>
+                </div>
+                <div class="respuestas incorrecta" id="respuesta3B">La respuesta correcta es:<strong> 2 toneladas</strong></div>
+                <div class="respuestas" id="b2">Respuesta correcta</div>
+              </div>
+              <button class="validarPuntaje" id="btnBilly">Corregir</button>
+              <div class="puntObtenido" id="puntajeBilly">Puntaje obtenido: 3 puntos</div>
+          </div> -->
           </article>
 
         </div>
